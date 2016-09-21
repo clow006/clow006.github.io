@@ -1,0 +1,63 @@
+/* 
+ * ##### Insert your code below! #####
+ */
+
+/* This is how you type comments in CSS */
+
+/* You can select all HTML elements with the same tag name to give the same style */
+
+p { /* This selects all the "p" tags and gives the style defined */
+  /* color: green; */
+}
+
+/* An id is used to select one unique element in HTML, it is represented by hash "#" */ 
+/* For example, ids are used for the lists */
+#ordered123 {
+  /* To choose a font color, you can use the name of the color */
+  color: red; 
+}
+#unordered {
+  /* To define a more specific color, use the color picker */
+  /* color: #3399ff; */
+}
+
+/* A class is used to select multiple elements in HTML, it is represented by dot "." */ 
+.greybackground {
+  /* background: grey;
+  color: white; */
+}
+/* Notice when I add the greybackground class to the "p" tag, it overrides the color. This is because using the element is more general, using the class is more specific, so the more specific style overrides the more general style */
+
+/* Also Notice the space on top and below the paragraph, It is because of the margins of the paragraph. Refer to the box element diagram */
+/* To specifically select the "p" element with class "greybackground", use "p.greybackground" */
+p.greybackground {
+  /* margin: 10px; */ 
+  /* Use "margin-top", "margin-bottom", "margin-left", "margin-right" to adjust specific sides */
+  /* padding: 20px; */ 
+  /* Use "padding-top", "padding-bottom", "padding-left", "padding-right" to adjust specific sides */
+}
+/* The difference between padding and margin: padding is part of the element (properties like background will apply), margin is the space outside an element */
+
+/* use ":hover" to define styles while hovering */
+img:hover {
+  /* background: blue; */
+}
+
+/* To make divs in the same line, use "display: inline-block" */
+.inlineblock {
+  display: inline-block;
+}
+
+/* "position" is "static" by default, when set to "relative", you can translate using "left", "right", "top", "bottom" */
+.translate {
+  /* position: relative;
+  left: 50%;
+  bottom: 100px; */
+}
+
+/* "position: fixed" means the position is stuck to a position on the screen despite scrolling. Needs "left", "right", "top", "bottom" to be set */
+.fixed {
+  /* position: fixed;
+  left: 10px;
+  bottom: 10px; */
+}
